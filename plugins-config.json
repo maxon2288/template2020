@@ -1,8 +1,5 @@
 {
-
     // You can find docs for this file here: ./docs/en|ru/plugins-options.md
-
-    "autoprefixerConfig": ["> 1%", "last 2 versions", "Firefox ESR", "android 4"],
 
     "browserSync": {
         "startPath": "/index.html",
@@ -23,31 +20,16 @@
 
     "gulp-sass": {
         "outputStyle": "expanded",
-        "includePaths": [
-            "./",
-            "./markup/",
-            "./node_modules/",
-            "./bower_components/"
-        ]
+        "includePaths": ["./", "./markup/", "./node_modules/", "./bower_components/"]
     },
 
     "gulp-less": {
-        "paths": [
-            "./",
-            "./markup/",
-            "./node_modules/",
-            "./bower_components/"
-        ]
+        "paths": ["./", "./markup/", "./node_modules/", "./bower_components/"]
     },
     "gulp-stylus": {
         "resolve url": true,
         "include css": true,
-        "include": [
-            "./",
-            "./markup/",
-            "./node_modules/",
-            "./bower_components/"
-        ]
+        "include": ["./", "./markup/", "./node_modules/", "./bower_components/"]
     },
 
     // helpers option is set in make-sprite-for-svg.
@@ -114,7 +96,7 @@
         "indent_inner_html": true
     },
 
-    "gulp-uglify": {
+    "gulp-terser": {
         "mangle": false,
         "compress": {
             "drop_console": "insert(tars.config.js.removeConsoleLog)",

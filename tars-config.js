@@ -2,7 +2,7 @@ module.exports = {
     "postcss": [],
     "svg": {
         "active": true,
-        "workflow": "symbols",
+        "workflow": "sprite",
         "symbolsConfig": {
             "loadingType": "inject",
             "usePolyfillForExternalSymbols": true,
@@ -45,9 +45,10 @@ module.exports = {
     },
     "minifyHtml": false,
     "generateStaticPath": true,
-    "buildPath": "./public/",
-    "useBuildVersioning": false,
-    "useArchiver": false,
+    "devPath": "./dev/",
+    "buildPath": "./builds/",
+    "useBuildVersioning": true,
+    "useArchiver": true,
     "ulimit": 4096,
     "templater": "handlebars",
     "cssPreprocessor": "scss",
